@@ -15,6 +15,6 @@ CREATE TABLE IF NOT EXISTS tasks (
 INSERT INTO users (email, password)
 VALUES (
   'test@test.com',
-  '$2b$10$TlJ0k8dVjP5jN1Y6xJjL2OWoV6x6rK6J6Q4K9l0j6gQzM7nWz2TgW'
+  '$2b$10$XK.pfVl.w7XkB.doUUTzzuvwi6s0n9HIDeoWz6ff0sz7qlCBWDQ1m'
 )
 ON CONFLICT (email) DO NOTHING;
