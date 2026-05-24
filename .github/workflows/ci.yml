@@ -54,7 +54,7 @@ jobs:
           -h localhost \
           -U postgres \
           -d tasksdb \
-          -f init.sql
+          -f src/sql/init.sql
 
       - name: Run tests
         run: npm test
