@@ -48,5 +48,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Initialize database
+        run: |
+          PGPASSWORD=postgres psql \
+          -h localhost \
+          -U postgres \
+          -d tasksdb \
+          -f init.sql
+
       - name: Run tests
         run: npm test
